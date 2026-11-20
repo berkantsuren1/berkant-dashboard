@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berkant Dashboard</title>
+<meta name="description" content="Tek kişilik, yerel çalışan, salt okunur kişisel dashboard.">
+<style>
+  :root { --bg: #ffffff; --fg: #1d2330; --muted: #5b6475; --line: #e3e6ec; --accent: #2f6fde; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11151c; --fg: #e6e9ef; --muted: #9aa3b2; --line: #262d39; --accent: #7aa7ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  p, li { color: var(--fg); }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Berkant Dashboard</h1>
+  <p class="sub">Tek kişilik, yerel çalışan, salt okunur kişisel dashboard.</p>
+
+  <p>Berkant Dashboard, Berkant Süren'in kendi bilgisayarında çalıştırdığı kişisel bir uygulamadır. Kamuya açık bir hizmet değildir; başka kullanıcıya sunulmaz.</p>
+
+  <h2>Ne yapar</h2>
+  <ul>
+    <li>Sahibinin Gmail hesabındaki okunmamış iletilerin gönderen, konu ve kısa önizlemesini gösterir.</li>
+    <li>Sahibinin Google Takvim'indeki yaklaşan etkinlikleri gösterir.</li>
+    <li>Sahibinin yerel not klasöründeki notları ve raporları gösterir.</li>
+  </ul>
+
+  <h2>Ne yapmaz</h2>
+  <ul>
+    <li>Mail göndermez, silmez, etiketlemez; takvimde etkinlik oluşturmaz veya değiştirmez. Yalnız salt okuma izinleri kullanır.</li>
+    <li>Verileri herhangi bir sunucuya, bulut hizmetine veya üçüncü kişiye göndermez.</li>
+    <li>Yalnız bilgisayarın kendisinden (127.0.0.1) erişilebilir; internete veya yerel ağa açık değildir.</li>
+  </ul>
+
+  <p><a href="privacy.html">Gizlilik politikası</a></p>
+
+  <hr>
+
+  <h1 lang="en">Berkant Dashboard</h1>
+  <p class="sub" lang="en">A single-user, locally running, read-only personal dashboard.</p>
+  <div lang="en">
+    <p>Berkant Dashboard is a personal application that Berkant Süren runs on his own computer. It is not a public service and is not offered to other users.</p>
+    <p>It shows the owner's unread Gmail messages (sender, subject, short preview), upcoming Google Calendar events and local notes. It uses read-only scopes only, sends no data to any server or third party, and listens only on the local machine (127.0.0.1).</p>
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </div>
+
+  <footer>Berkant Dashboard · kişisel kullanım / personal use</footer>
+</main>
+</body>
+</html>
